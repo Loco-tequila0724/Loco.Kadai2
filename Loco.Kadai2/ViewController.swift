@@ -1,14 +1,10 @@
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController {
     @IBOutlet weak private var firstTextField: UITextField!
     @IBOutlet weak private var secondTextField: UITextField!
     @IBOutlet weak private var segmentedControlFourArithmeticOperations: UISegmentedControl!
     @IBOutlet weak private var calculateDisplayLabel: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     private func toDisplayCalculation() {
         let selectSegmentIndex: Int = segmentedControlFourArithmeticOperations.selectedSegmentIndex
